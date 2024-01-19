@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DA57C1F2B5A47E2002CFE43 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA57C1E2B5A47E2002CFE43 /* DayOfWeek.swift */; };
+		4DA57C212B5A48C6002CFE43 /* BooleanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA57C202B5A48C6002CFE43 /* BooleanResponse.swift */; };
+		4DA57C232B5A4AC5002CFE43 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA57C222B5A4AC5002CFE43 /* Frequency.swift */; };
 		4DB1EB342B468A6A00720E44 /* TrashDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EB332B468A6A00720E44 /* TrashDayApp.swift */; };
 		4DB1EB362B468A6A00720E44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EB352B468A6A00720E44 /* ContentView.swift */; };
 		4DB1EB3A2B468A6B00720E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DB1EB392B468A6B00720E44 /* Assets.xcassets */; };
@@ -15,7 +18,7 @@
 		4DB1EB512B468A6B00720E44 /* TrashDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EB502B468A6B00720E44 /* TrashDayUITests.swift */; };
 		4DB1EB532B468A6B00720E44 /* TrashDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EB522B468A6B00720E44 /* TrashDayUITestsLaunchTests.swift */; };
 		4DB1EB602B468D4000720E44 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EB5F2B468D4000720E44 /* ConfigurationView.swift */; };
-		4DB1EB632B468DBD00720E44 /* TrashConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EB622B468DBD00720E44 /* TrashConfigurationView.swift */; };
+		4DB1EB632B468DBD00720E44 /* ConfigurationStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EB622B468DBD00720E44 /* ConfigurationStepView.swift */; };
 		4DB1EB652B469B3B00720E44 /* BooleanQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1EB642B469B3B00720E44 /* BooleanQuestion.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DA57C1E2B5A47E2002CFE43 /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
+		4DA57C202B5A48C6002CFE43 /* BooleanResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanResponse.swift; sourceTree = "<group>"; };
+		4DA57C222B5A4AC5002CFE43 /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
 		4DB1EB302B468A6A00720E44 /* TrashDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrashDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB1EB332B468A6A00720E44 /* TrashDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashDayApp.swift; sourceTree = "<group>"; };
 		4DB1EB352B468A6A00720E44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +54,7 @@
 		4DB1EB502B468A6B00720E44 /* TrashDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashDayUITests.swift; sourceTree = "<group>"; };
 		4DB1EB522B468A6B00720E44 /* TrashDayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashDayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4DB1EB5F2B468D4000720E44 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
-		4DB1EB622B468DBD00720E44 /* TrashConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashConfigurationView.swift; sourceTree = "<group>"; };
+		4DB1EB622B468DBD00720E44 /* ConfigurationStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationStepView.swift; sourceTree = "<group>"; };
 		4DB1EB642B469B3B00720E44 /* BooleanQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanQuestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,10 +108,13 @@
 			children = (
 				4DB1EB612B468D8300720E44 /* ConfigurationView */,
 				4DB1EB332B468A6A00720E44 /* TrashDayApp.swift */,
+				4DA57C222B5A4AC5002CFE43 /* Frequency.swift */,
 				4DB1EB352B468A6A00720E44 /* ContentView.swift */,
 				4DB1EB392B468A6B00720E44 /* Assets.xcassets */,
 				4DB1EB3B2B468A6B00720E44 /* Preview Content */,
 				4DB1EB642B469B3B00720E44 /* BooleanQuestion.swift */,
+				4DA57C1E2B5A47E2002CFE43 /* DayOfWeek.swift */,
+				4DA57C202B5A48C6002CFE43 /* BooleanResponse.swift */,
 			);
 			path = TrashDay;
 			sourceTree = "<group>";
@@ -139,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				4DB1EB5F2B468D4000720E44 /* ConfigurationView.swift */,
-				4DB1EB622B468DBD00720E44 /* TrashConfigurationView.swift */,
+				4DB1EB622B468DBD00720E44 /* ConfigurationStepView.swift */,
 			);
 			path = ConfigurationView;
 			sourceTree = "<group>";
@@ -297,9 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DB1EB632B468DBD00720E44 /* TrashConfigurationView.swift in Sources */,
+				4DA57C212B5A48C6002CFE43 /* BooleanResponse.swift in Sources */,
+				4DB1EB632B468DBD00720E44 /* ConfigurationStepView.swift in Sources */,
 				4DB1EB362B468A6A00720E44 /* ContentView.swift in Sources */,
 				4DB1EB652B469B3B00720E44 /* BooleanQuestion.swift in Sources */,
+				4DA57C232B5A4AC5002CFE43 /* Frequency.swift in Sources */,
+				4DA57C1F2B5A47E2002CFE43 /* DayOfWeek.swift in Sources */,
 				4DB1EB602B468D4000720E44 /* ConfigurationView.swift in Sources */,
 				4DB1EB342B468A6A00720E44 /* TrashDayApp.swift in Sources */,
 			);

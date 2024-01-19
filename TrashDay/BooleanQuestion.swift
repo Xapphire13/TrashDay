@@ -1,16 +1,6 @@
-//
-//  BooleanQuestion.swift
 //  TrashDay
-//
 
 import SwiftUI
-
-enum BooleanResponse: String, Identifiable {
-    // swiftlint:disable:next identifier_name
-    case undefined, no, yes
-
-    var id: Self { self }
-}
 
 struct BooleanQuestion: View {
     private let label: String
@@ -24,28 +14,26 @@ struct BooleanQuestion: View {
     }
 
     var body: some View {
-        VStack {
+        HStack {
             Text(self.label)
-            HStack {
-                Spacer()
-                Toggle("No", isOn: $noSelected).onChange(of: noSelected) { _, new in
-                    if new {
-                        self.yesSelected = false
-                        self.value.wrappedValue = .no
-                    } else if !yesSelected {
-                        self.value.wrappedValue = .undefined
-                    }
+            Spacer()
+            Toggle("No", isOn: $noSelected).onChange(of: noSelected) { _, new in
+                if new {
+                    self.yesSelected = false
+                    self.value.wrappedValue = .no
+                } else if !yesSelected {
+                    self.value.wrappedValue = .undefined
                 }
-                Toggle("Yes", isOn: $yesSelected).onChange(of: yesSelected) { _, new in
-                    if new {
-                        self.noSelected = false
-                        self.value.wrappedValue = .yes
-                    } else if !noSelected {
-                        self.value.wrappedValue = .undefined
-                    }
-                }
-                Spacer()
             }
+            Toggle("Yes", isOn: $yesSelected).onChange(of: yesSelected) { _, new in
+                if new {
+                    self.noSelected = false
+                    self.value.wrappedValue = .yes
+                } else if !noSelected {
+                    self.value.wrappedValue = .undefined
+                }
+            }
+
         }.toggleStyle(.button)
     }
 }
