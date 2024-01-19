@@ -3,8 +3,8 @@
 //  TrashDay
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct TrashDayApp: App {
